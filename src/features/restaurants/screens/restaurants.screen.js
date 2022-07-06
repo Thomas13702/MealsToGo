@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import {
-  Text,
   View,
   SafeAreaView,
   Platform,
@@ -8,6 +7,7 @@ import {
   StyleSheet,
 } from "react-native";
 import { Searchbar } from "react-native-paper";
+import { RestaurantInfo } from "../components/restaurant-info.component";
 
 export const ReastaurantsScreen = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -21,7 +21,7 @@ export const ReastaurantsScreen = () => {
         />
       </View>
       <View style={styles.list}>
-        <Text>list</Text>
+        <RestaurantInfo />
       </View>
     </SafeAreaView>
   );
